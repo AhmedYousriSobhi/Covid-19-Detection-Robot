@@ -36,6 +36,8 @@ sudo pigpiod
 
 Two Stepper motor drivers connected in parallel to the same Two pins as one drivers requires arount 20uA, and the pin in raspberrye max output current is 16mA.
 
+Datasheet: https://www.pololu.com/file/0J450/a4988_DMOS_microstepping_driver_with_translator.pdf
+
 ### DC Motors: (Untested)
 
 Using 4 DC motors for motion controlled by two cytron dual channels motor drivers
@@ -51,7 +53,7 @@ Txt File Creation: https://www.guru99.com/reading-and-writing-files-in-python.ht
 
 ### Uploading photos to a shareable folder in your google drive: (Tested alone & Worked)
 
-First fill the information required in "image-upload.config" file.
+First fill the information required in "Configuration.config" file.
 
 To git your json secert file, follow the steps in this help guide "How to access google drive using services account json file"
 link: https://help.talend.com/reader/E3i03eb7IpvsigwC58fxQg/ol2OwTHmFbDiMjQl3ES5QA
@@ -75,3 +77,12 @@ Photo Upload to google drive: https://github.com/MartinStolle/pi-upload-google-d
 ## Schematic:
 ![ThermalRobot_bb_V4](https://user-images.githubusercontent.com/66730765/85926326-103d8700-b89f-11ea-9524-5f314211c956.png)
 
+##Notes:
+
+Untested was just because i didn't have the hardware to check if the stepper/motors are moving or not.
+
+Configuring the Motion will differ dependent on the Hardware used like types of Motors, wires connection. so you need to reconfig all the hardware connection to work perfectly with your robot design.
+
+Uploading takes about 1 min to upload, depending on the internet speed and google response.
+Video for capturing and Uploading :
+https://youtu.be/TPatxsJOXbY
