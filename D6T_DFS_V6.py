@@ -78,6 +78,7 @@ txtIndex = -1
 THERESHOLD_TEMPERATURE = 40  #used in compare() function.
 THERESHOLD_PIXELS = 3 #determine if there is more than one high temp pixel.
 outputDirectory = ""  #used in read_configuration() function.
+ALARM_PIN = 13 #Alarm Pin.
 LFM_PWM_PIN = 13 #Left Front Motor (PWM0).
 LBM_PWM_PIN = 19 #Left Back Motor (PWM0).
 RFM_PWM_PIN = 12 #Left Front Motor (PWM1).
@@ -440,6 +441,7 @@ class Configuration:
         stepperDir = int(config['Pins']['stepperDir'])
         stepperStep = int(config['Pins']['stepperStep'])
         THERESHOLD_TEMPERATURE = int(config['Pins']['THERESHOLD_TEMPERATURE'])
+        ALARM_PIN = int(config['Pins']['ALARM_PIN'])
 
         self.log_configuration()
 
@@ -480,6 +482,8 @@ class Configuration:
         config['Pins']['stepperDir'] = str(stepperDir)
         config['Pins']['stepperStep'] = str(stepperStep)
         config['Pins']['THERESHOLD_TEMPERATURE'] = str(THERESHOLD_TEMPERATURE)
+        config['Pins']['ALARM_PIN'] = str(ALARM_PIN)
+
         with open(self.filename, 'w') as configfile:
             config.write(configfile)
 
@@ -922,6 +926,9 @@ IO.setup(LFM_DIR_PIN, IO.OUT)
 IO.setup(LBM_DIR_PIN, IO.OUT)
 IO.setup(RFM_DIR_PIN, IO.OUT)
 IO.setup(RBM_DIR_PIN, IO.OUT)
+
+IO.setup(ALARM_PIN, IO.OUT)
+
 LFM_PWM  = IO.PWM(LFM_PWM_PIN, FRQ)
 LBM_PWM  = IO.PWM(LBM_PWM_PIN, FRQ)
 RFM_PWM  = IO.PWM(RFM_PWM_PIN, FRQ)
@@ -1061,14 +1068,16 @@ def main():
                         print("Two persons Close to each other")
                     else:
                         print("High Temprature person is detected")
-                        # Buzzer On.
-                getLocation()
-                #upload._ImageUpload__delete_all_files()
-                upload.check_for_new_images()
-                upload.check_for_new_txt()
-                #Fire Alarm
-                #wait some time
-                time.sleep(1)
+                        # Buzzer On, Relay Active Low
+                        IO.output(ALARM_PIN, False)
+                        getLocation()
+                        #upload._ImageUpload__delete_all_files()
+                        upload.check_for_new_images()
+                        upload.check_for_new_txt()
+                        #Fire Alarm
+                        #wait some time
+                        time.sleep(1)
+                        IO.output(ALARM_PIN, True)
 
     except KeyboardInterrupt:
         print("\n Ctrl-c Pressed, Stopping and exiting")
