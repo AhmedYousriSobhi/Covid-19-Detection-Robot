@@ -75,7 +75,7 @@ Ublox M6 GPS: https://github.com/Knio/pynmea2
 Photo Upload to google drive: https://github.com/MartinStolle/pi-upload-google-drive
 
 ## Schematic:
-![ThermalRobot_bb_V4](https://user-images.githubusercontent.com/66730765/85926326-103d8700-b89f-11ea-9524-5f314211c956.png)
+![ThermalRobot_bb_V5](https://user-images.githubusercontent.com/66730765/85927688-0409f780-b8a8-11ea-95f8-7a8b9b2f19c1.png)
 
 ##Notes:
 
