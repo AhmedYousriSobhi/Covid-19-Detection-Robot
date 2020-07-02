@@ -1,4 +1,4 @@
-# Thermal-Robot
+# Covid 19 Detection Robot
 ### D6t-44L-06: (Tested Alone and Worked)
    Check temperature using d6t-44l-06 Omron Thermal sensor.
    
