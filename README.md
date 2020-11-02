@@ -86,3 +86,13 @@ Configuring the Motion will differ dependent on the Hardware used like types of 
 Uploading takes about 1 min to upload, depending on the internet speed and google response.
 Video for capturing and Uploading :
 https://youtu.be/TPatxsJOXbY
+
+## Mechanical Part:
+This robot was designed by Mechanical Engineer called #"Ahmed Tarek".
+![106658532_2152473851564794_2022983822602779078_n](https://user-images.githubusercontent.com/66730765/97861062-da585580-1d0b-11eb-8de6-344703d110b9.jpg)
+![107072873_2152474001564779_2066270111311350289_n](https://user-images.githubusercontent.com/66730765/97861180-0d9ae480-1d0c-11eb-9dbf-7e2d7960d26a.jpg)
+![106031256_2152473994898113_2292379645124385839_n](https://user-images.githubusercontent.com/66730765/97861201-14295c00-1d0c-11eb-9e2c-5e1383115c4f.jpg)
+![106908668_2152473774898135_31862728186524255_n](https://user-images.githubusercontent.com/66730765/97861229-1c819700-1d0c-11eb-9af6-e5d622abc94a.jpg)
+![106995696_2152473871564792_3751203117740965211_o](https://user-images.githubusercontent.com/66730765/97861256-22777800-1d0c-11eb-8438-6b39f47b93e0.jpg)
+![106613984_2152473818231464_6954148417154197432_n](https://user-images.githubusercontent.com/66730765/97861274-26a39580-1d0c-11eb-8111-288b15a9f4de.jpg)
+
