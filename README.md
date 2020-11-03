@@ -62,6 +62,8 @@ Github code in sites section below.
 
 In output Directory: do not end the Path with '/'
 
+https://www.youtube.com/embed/TPatxsJOXbY
+
 ### Sites:
 
 DNN Code: https://heartbeat.fritz.ai/real-time-object-detection-on-raspberry-pi-using-opencv-dnn-98827255fa60
